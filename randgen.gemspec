@@ -29,8 +29,3 @@ END
   ]
 end
 
-if $0 == __FILE__
-  require 'rubygems/gem_runner'
-  Gem::GemRunner.new.run ['build', 'randgen.gemspec']
-end
-
