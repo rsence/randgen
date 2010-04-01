@@ -64,12 +64,6 @@ static VALUE cRandGen_initialize( VALUE self, VALUE target_length ){
   return self;
 }
 
-// NOTE: buffering is just ignored for now and included just for backwards-compatibility
-static VALUE cRandGen_initialize2( VALUE self, VALUE target_length, VALUE buffer_length ){
-  rb_iv_set(self,"@target_length",target_length);
-  return self;
-}
-
 // ruby-side 'RandGen' -class
 VALUE cRandomGenerator;
 // ruby-side 'RandomGenerator' -class (backwards-compatible)

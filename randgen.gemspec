@@ -1,13 +1,12 @@
-spec = Gem::Specification.new do |s|
+Gem::Specification.new do |s|
   s.name      = 'randgen'
-  s.rubyforge_project = 'randgen'
   s.author    = 'Juha-Jarmo Heinonen'
   s.email     = 'o@rsence.org'
-  s.version   = '0.9.10'
+  s.version   = '1.0.3'
   s.date      = '2010-02-26'
   s.homepage  = 'http://www.riassence.org/'
   s.summary   = 'Riassence RandGen'
-  s.has_rdoc  = false
+  s.has_rdoc  = true
   s.require_path = 'randgen'
   s.description = <<END
 Simple C extension that produces variable-length random ascii-safe strings quickly.
@@ -19,6 +18,7 @@ END
     extconf.rb
     randgen.c
     randgen.gemspec
+    test_randgen.rb
   )
   s.files.reject! { |fn| fn.include? ".svn" }
   s.files.reject! { |fn| fn.include? ".git" }

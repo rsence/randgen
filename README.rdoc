@@ -1,14 +1,16 @@
-= rsence-randgen
-
-http://rsence.org/
 
 
-== DESCRIPTION:
+= Riassence RandGen
+
+* http://rsence.org/
+
+
+== Description:
 
 Simple C extension that produces variable-length random ascii-safe strings quickly.
 This used to be a fixed part of the Riassence Framework, but it's distributed as a separate gem now.
 
-== SYNOPSIS:
+== Usage:
 
   require 'randgen'
   
@@ -21,17 +23,13 @@ This used to be a fixed part of the Riassence Framework, but it's distributed as
   # Generate 100 random strings in an Array
   arr_of_100_rand_strings = randgen.gen_many( 100 )
 
-== REQUIREMENTS:
+== Install:
 
-* Rake and such build tools usually needed for Ruby C extensions. Depends otherwise just on stdlib's <time.h>
+* sudo gem install randgen
 
-== INSTALL:
+== License:
 
-* sudo gem install rsence-randgen
-
-== LICENSE:
-
-  (GPL)
+  (GPL; see License.txt)
 
   Riassence Framework
   Copyright 2008 Riassence Inc.
@@ -39,4 +37,5 @@ This used to be a fixed part of the Riassence Framework, but it's distributed as
 
   You should have received a copy of the GNU General Public License along
   with this software package. If not, contact licensing@riassence.com
+
 
